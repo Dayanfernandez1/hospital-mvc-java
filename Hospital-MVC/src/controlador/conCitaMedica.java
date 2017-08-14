@@ -24,6 +24,32 @@ public class conCitaMedica implements ActionListener {
    }
     // Crear la función para poder ejecutar eventos
    public void actionPerformed(ActionEvent e){
-       
+      // Función para el botón Limpiar
+      if(e.getSource()==vistaCitaMedica.btnLimpiar){
+          vistaCitaMedica.txtCodigo.setText("");
+          vistaCitaMedica.txtMotivo.setText("");
+          vistaCitaMedica.txtDiagnostico.setText("");
+          vistaCitaMedica.txtConcepto.setText("");
+          vistaCitaMedica.txtMedicina.setText("");
+          vistaCitaMedica.txtFecha.setText("");
+          vistaCitaMedica.txtPaciente.setText("");
+          vistaCitaMedica.txtDoctor.setText("");
+      }
+      // Función para el botón Registrar
+      if(e.getSource()==vistaCitaMedica.btnGuardar){
+         // Capturar valores
+         int codigo = Integer.parseInt(vistaCitaMedica.txtCodigo.getText());
+         String motivo = vistaCitaMedica.txtMotivo.getText();
+         String diagnostico = vistaCitaMedica.txtDiagnostico.getText();
+         String concepto = vistaCitaMedica.txtConcepto.getText();
+         String medicina = vistaCitaMedica.txtMedicina.getText();
+         String fecha = vistaCitaMedica.txtFecha.getText();
+         Double paciente = Double.parseDouble(vistaCitaMedica.txtPaciente.getText());
+         Double doctor = Double.parseDouble(vistaCitaMedica.txtDoctor.getText());
+         // Ejecutar la función INSERT
+         String respuesta = modeloCitaMedica.insertCitaMedica(codigo, motivo, diagnostico, concepto, medicina, fecha, paciente, doctor);
+         // Mostrar resultado
+         JOptionPane.showMessageDialog(null,respuesta);
+      }
    }
 }
