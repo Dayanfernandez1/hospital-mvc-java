@@ -31,10 +31,12 @@ public class visPrincipal extends javax.swing.JFrame {
         btnAbrirPaciente = new javax.swing.JButton();
         btnAbrirCitaMedica = new javax.swing.JButton();
         btnAbrirDoctor = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Hospital MVC Java");
 
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel1.setText("HOSPITAL");
 
         btnAbrirPaciente.setText("Pacientes");
@@ -42,6 +44,9 @@ public class visPrincipal extends javax.swing.JFrame {
         btnAbrirCitaMedica.setText("Citas Medicas");
 
         btnAbrirDoctor.setText("Doctores");
+
+        btnSalir.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        btnSalir.setText("Salir");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -52,12 +57,16 @@ public class visPrincipal extends javax.swing.JFrame {
                 .addComponent(btnAbrirPaciente)
                 .addGap(54, 54, 54)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnAbrirCitaMedica)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnAbrirCitaMedica)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(8, 8, 8)
+                                .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(42, 42, 42)
-                        .addComponent(btnAbrirDoctor))
-                    .addComponent(jLabel1))
-                .addContainerGap(37, Short.MAX_VALUE))
+                        .addComponent(btnAbrirDoctor)))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -69,7 +78,9 @@ public class visPrincipal extends javax.swing.JFrame {
                     .addComponent(btnAbrirPaciente)
                     .addComponent(btnAbrirCitaMedica)
                     .addComponent(btnAbrirDoctor))
-                .addContainerGap(79, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
+                .addComponent(btnSalir)
+                .addGap(22, 22, 22))
         );
 
         pack();
@@ -114,6 +125,7 @@ public class visPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton btnAbrirCitaMedica;
     private javax.swing.JButton btnAbrirDoctor;
     private javax.swing.JButton btnAbrirPaciente;
+    private javax.swing.JButton btnSalir;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
