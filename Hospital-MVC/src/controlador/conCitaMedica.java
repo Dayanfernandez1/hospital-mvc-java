@@ -15,15 +15,12 @@ public class conCitaMedica implements ActionListener {
       // Inicializar los objetos
       this.vistaCitaMedica = vistaCitaMedica;
       // Añadir el actionListener a los botones
-      /* Inicializar los objetos
-      this.modeloTienda = modeloTienda;
-      this.vistaTienda = vistaTienda;
-      /*this.vistaTienda.btnRegistrar.addActionListener(this);
-      this.vistaTienda.btnEliminar.addActionListener(this);
-      this.vistaTienda.btnLimpiar.addActionListener(this);
-      this.vistaTienda.btnActualizar.addActionListener(this);
-      this.vistaTienda.btnCerrar.addActionListener(this);*/
-          
+      this.vistaCitaMedica.btnLimpiar.addActionListener(this);
+      this.vistaCitaMedica.btnNuevo.addActionListener(this);
+      this.vistaCitaMedica.btnGuardar.addActionListener(this);
+      this.vistaCitaMedica.btnEliminar.addActionListener(this);
+      this.vistaCitaMedica.btnAtras.addActionListener(this);
+      this.vistaCitaMedica.btnSalir.addActionListener(this);
    }
     // Crear la función para poder ejecutar eventos
    public void actionPerformed(ActionEvent e){
