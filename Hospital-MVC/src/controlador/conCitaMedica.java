@@ -16,7 +16,7 @@ public class conCitaMedica implements ActionListener {
       this.vistaCitaMedica = vistaCitaMedica;
       // Añadir el actionListener a los botones
       this.vistaCitaMedica.btnLimpiar.addActionListener(this);
-      this.vistaCitaMedica.btnNuevo.addActionListener(this);
+      this.vistaCitaMedica.btnActualizar.addActionListener(this);
       this.vistaCitaMedica.btnGuardar.addActionListener(this);
       this.vistaCitaMedica.btnEliminar.addActionListener(this);
       this.vistaCitaMedica.btnAtras.addActionListener(this);
