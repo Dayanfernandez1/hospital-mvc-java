@@ -243,12 +243,12 @@ public class visDoctor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAtras;
-    private javax.swing.JButton btnEliminar;
-    private javax.swing.JButton btnGuardar;
-    private javax.swing.JButton btnLimpiar;
-    private javax.swing.JButton btnNuevo;
-    private javax.swing.JButton btnSalir;
+    public javax.swing.JButton btnAtras;
+    public javax.swing.JButton btnEliminar;
+    public javax.swing.JButton btnGuardar;
+    public javax.swing.JButton btnLimpiar;
+    public javax.swing.JButton btnNuevo;
+    public javax.swing.JButton btnSalir;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -260,14 +260,14 @@ public class visDoctor extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField txtApellido;
-    private javax.swing.JTextField txtDireccion;
-    private javax.swing.JTextField txtEmail;
-    private javax.swing.JTextField txtEspecialidad;
-    private javax.swing.JTextField txtIdentificacion;
-    private javax.swing.JTextField txtNombre;
-    private javax.swing.JTextField txtRetiro;
-    private javax.swing.JTextField txtTelefono;
-    private javax.swing.JTextField txtVinculacion;
+    public javax.swing.JTextField txtApellido;
+    public javax.swing.JTextField txtDireccion;
+    public javax.swing.JTextField txtEmail;
+    public javax.swing.JTextField txtEspecialidad;
+    public javax.swing.JTextField txtIdentificacion;
+    public javax.swing.JTextField txtNombre;
+    public javax.swing.JTextField txtRetiro;
+    public javax.swing.JTextField txtTelefono;
+    public javax.swing.JTextField txtVinculacion;
     // End of variables declaration//GEN-END:variables
 }

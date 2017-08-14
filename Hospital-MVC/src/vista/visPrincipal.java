@@ -122,10 +122,10 @@ public class visPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAbrirCitaMedica;
-    private javax.swing.JButton btnAbrirDoctor;
-    private javax.swing.JButton btnAbrirPaciente;
-    private javax.swing.JButton btnSalir;
+    public javax.swing.JButton btnAbrirCitaMedica;
+    public javax.swing.JButton btnAbrirDoctor;
+    public javax.swing.JButton btnAbrirPaciente;
+    public javax.swing.JButton btnSalir;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
