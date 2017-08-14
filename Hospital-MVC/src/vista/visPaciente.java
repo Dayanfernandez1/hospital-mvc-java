@@ -54,6 +54,7 @@ public class visPaciente extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel1.setText("   Paciente");
 
         jLabel2.setText("Documento");
