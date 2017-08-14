@@ -5,6 +5,9 @@
  */
 package vista;
 
+import controlador.*;
+import modelo.*;
+
 /**
  *
  * @author Tankayan
@@ -40,8 +43,18 @@ public class visPrincipal extends javax.swing.JFrame {
         jLabel1.setText("HOSPITAL");
 
         btnAbrirPaciente.setText("Pacientes");
+        btnAbrirPaciente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAbrirPacienteActionPerformed(evt);
+            }
+        });
 
         btnAbrirCitaMedica.setText("Citas Medicas");
+        btnAbrirCitaMedica.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAbrirCitaMedicaActionPerformed(evt);
+            }
+        });
 
         btnAbrirDoctor.setText("Doctores");
 
@@ -96,6 +109,19 @@ public class visPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_btnSalirActionPerformed
+
+    private void btnAbrirPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAbrirPacienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAbrirPacienteActionPerformed
+
+    private void btnAbrirCitaMedicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAbrirCitaMedicaActionPerformed
+        // TODO add your handling code here:
+        // Crear un objeto para modelo vista y controlador
+        modCitaMedica ModeloCitaMedica = new modCitaMedica();
+        visCitaMedica VistaCitaMedica = new visCitaMedica();
+        conCitaMedica ControladorCitaMedica = new conCitaMedica(VistaCitaMedica,ModeloCitaMedica);
+        VistaCitaMedica.setVisible(true);
+    }//GEN-LAST:event_btnAbrirCitaMedicaActionPerformed
 
     /**
      * @param args the command line arguments
